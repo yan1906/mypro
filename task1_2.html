@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+			font-size: 18px;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		}
+		div.content{
+			text-align: right;
+			font-style: italic;
+			display: inline-block;
+			line-height: 5px;
+		}
+		div.content p.f:before{
+			content: "\201C";
+			color: grey;
+			font-size: 28px;
+		}
+		div.content p.s:after{
+			content: "\201D";
+			color: grey;
+			font-size: 28px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>Martin Fowler said</p>
+		<div class="content">
+		<p class="f">Any fool can write code that computer can understand.</p>
+		<p class="s">Good programmers write code that humans can understand</p>
+		</div>
+	</div>
+</body>
+</html>

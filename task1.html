@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		div{
+			display: inline-block;
+		}
+		ul{
+			list-style-type: none;
+			text-align: center;
+			font-size: 22px;
+		}
+		ul:hover{
+			font-weight: 900;
+		}
+		li{
+			width: 30px;
+			height: 30px;
+			border: 1px solid grey;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		li:nth-child(odd){
+			background: aqua;
+		}
+		.hidden{
+			position: relative;
+
+		}
+		.menu .has-children:hover>ul{
+			display: block;
+		}
+		.menu .has-children ul{
+			display: none;
+			position: absolute;
+			margin-left: -8px;
+			margin-top: -25px;
+		}
+		
+		
+	</style>
+</head>
+<body>
+<div>
+	<ul class="menu">
+		<li>1</li>
+		<li class="has-children">2
+			<ul>
+				<li class="has-children">2.1</li>
+				<li>2.2</li>
+			</ul>
+		</li>
+		<li>3</li>
+	</ul>
+</div>
+</body>
+</html>
